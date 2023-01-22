@@ -1,0 +1,262 @@
+{% extends "base.html" %}
+{% block title%}home page{% endblock %}
+{% block content %}
+
+<style type="text/css">
+    .jumbotron{
+    margin-top: 20px;
+    background-image: url(https://www.thewrap.com/wp-content/uploads/2015/09/laborday-rocky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    margin-bottom: 100px;
+    padding: 100px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+</style>
+
+<div class="container">
+    <div class="jumbotron">
+    <p style="color:white; font-family: tahoma" class="display-3"> WELCOME TO THE FITNESS FORMULA!</p>
+        <br/>
+        <br/>
+        <br/>
+
+        <p style=" color:white; font-size:125%; font-family: tahoma" class="display-5"><strong> Every champion was once a contender who refused to give up. </strong> </p>
+        <p style="color:white ; font-size:125%; font-family: tahoma" class="display-5"><strong>-Rocky Balboa</strong></p>
+    </div>
+</div>
+
+<style type="text/css">
+.la {
+  width: 1070px;
+  border: 10px solid white;
+  padding: 50px;
+  margin: 20px;
+  background-color: lightgreen;
+}
+</style>
+
+<body style="background-color:lavender;">
+
+
+<div class="container">
+    <div class="la">
+<p style = "font-size: 175%; color: black"> The Fitness Formula is an easy-to-use questionnaire that will help you to get the body you want!
+The most important part to any fitness goal is your nutrition, The Fitness Formula aims
+to help you find the perfect diet. Upon completing the 8 question quiz, you will be shown ur personal
+diet roadmap containing the key figures to guide you on your journey!</p>
+    </div>
+</div>
+<hr/>
+<br/>
+</body>
+<form method="POST">
+    <h3 align="center">Enter your info below</h3>
+    <br/>
+    <div class="form-group">
+        <h5 >Enter your current weight below.</h5>
+        <input
+                type="number"
+               class="form-control"
+                id="height"
+                name="weight"
+                placeholder = "Weight in lbs"
+        />
+    </div>
+        <br />
+            <img src=
+"https://blog.fitbit.com/wp-content/uploads/2017/05/0510_MeatForRunners_Blog_Hero.jpg"
+                 alt="GeeksforGeeks logo"
+         align="right"
+        width="400px"
+        height="400px"
+        >
+    <h5 align="left"> Enter your gender below</h5>
+    <select name = "gender">
+        <option value = "NONE"> </option>
+        <option value = "Male">Male</option>
+        <option value = "Female">Female
+    </select>
+           <br />
+
+
+    <br />
+    <br />
+
+    <h5 align="left">Enter your height below.</h5>
+    <select name = "height">
+
+    <option value="NONE"> </option>
+    <option value="142">4' 8"</option>
+    <option value="144">4' 9"</option>
+    <option value="147">4' 10"</option>
+    <option value="149">4' 11"</option>
+    <option value="152">5' 0"</option>
+    <option value="154">5' 1"</option>
+    <option value="157">5' 2"</option>
+    <option value="159">5' 3"</option>
+    <option value="162">5' 4"</option>
+    <option value="164">5' 5"</option>
+    <option value="167">5' 6"</option>
+    <option value="169">5' 7"</option>
+    <option value="172">5' 8"</option>
+    <option value="174">5' 9"</option>
+    <option value="177">5' 10"</option>
+    <option value="179">5' 11"</option>
+    <option value="182">6' 0"</option>
+    <option value="184">6' 1"</option>
+    <option value="187">6' 2"</option>
+    <option value="189">6' 3"</option>
+    <option value="192">6' 4"</option>
+    <option value="194">6' 5"</option>
+    <option value="197">6' 6"</option>
+    </select>
+
+        <br />
+
+
+    <br />
+    <br />
+    <h5 align="left">Would you like to lose, gain, or maintain weight?</h5>
+   <select name="weight_type">
+       <option value="NONE"> </option>
+       <option value="gain">gain weight </option>
+       <option value="lose">lose weight </option>
+       <option value="maintain">maintain weight </option>
+</select>
+
+
+
+    <br />
+    <br />
+    <br />
+    <h5 align="left">How many pounds would you like to lose/gain?</h5>
+    <h6 align="left"> If you would like to maintain weight select 0.</h6>
+    <select name="weight_change">
+        <option value="NONE"></option>
+        <option value="0"> 0 lbs</option>
+        <option value="5"> 5 lbs</option>
+        <option value="10"> 10 lbs</option>
+        <option value="15"> 15+ lbs</option>
+
+    </select>
+    <br />
+    <br />
+    <br />
+
+
+    <h5 align="left">How many days a week do you plan to exercise?</h5>
+    <h6 align="left">If your job involves any manual labor or keeps you on your feet, include the number of
+    days a week you work!</h6>
+
+  <select name="days">
+      <option value="NONE"> </option>
+    <option value="0">0 days</option>
+    <option value="1">1 day</option>
+    <option value="2">2 days</option>
+    <option value="3">3 days</option>
+    <option value="4">4 days</option>
+    <option value="5">5 days</option>
+    <option value="6">6 days</option>
+    <option value="7">7 days</option>
+
+  </select>
+    <br />
+    <br />
+    <br />
+    <h5 align="left">How intense do you plan to exercise?</h5>
+    <h6 align="left">Walking or light swimming would qualify as a 1; on the other hand, running, skiing, or boxing would qualify as a 5. If you do not plan to exercise mark this  box as 0. If you're not sure choose level 3 intensity.</h6>
+      <select name="intensity">
+      <option value="NONE"> </option>
+    <option value="0">0 </option>
+    <option value="1">1 </option>
+    <option value="2">2 </option>
+    <option value="3">3 </option>
+    <option value="4">4 </option>
+    <option value="5">5 </option>
+
+  </select>
+    <br />
+    <br />
+    <br />
+    <h5 align="left">How long would you like your Fitness Formula plan set for?</h5>
+    <h6 align="left">A longer duration is preferred, this will allow for less drastic nutrition changes to meet your goals! However, if summer is right around the corner a one-month duration is acceptable!</h6>
+
+    <select name="duration">
+        <option value="NONE"></option>
+        <option value=".25">One-month</option>
+        <option value=".5">Three-month</option>
+        <option value="1">Six-month</option>
+        <option value="2">One-year</option>
+    </select>
+    <br />
+    <br />
+    <br />
+        <h5 align="left">Do you follow a vegetarian, vegan, or keto diet plan?</h5>
+    <h6 align="left">Below you can find more information on these diet types and their
+    benefits.</h6>
+
+    <select name="diet_type">
+        <option value="NONE"></option>
+        <option value="0">No</option>
+        <option value="200">Vegetarian</option>
+        <option value="400">Vegan</option>
+        <option value="800">Keto</option>
+    </select>
+    <br />
+    <br />
+    <br />
+    <div align="center">
+    <button type="submit" class="btn btn-primary btn-lg">Calculate YOUR Fitness Formula</button>
+    </div>
+    <hr/>
+    <br />
+    <br />
+<h2> Why use The Fitness Formula?</h2>
+    <h4>Its simple, fixed calorie limits never work! We all have different body types and different goals, that is why
+    everyone needs a <strong>personalized</strong> plan to best fit their goals! The Fitness Formula is meant to be extremely
+    customizable to fit anyone's needs, an important aspect is the ability to choose if you would like your roadmap designed
+    with your own preexisting diets such as vegetarian, vegan, or keto diets. We want <strong>everyone</strong> to be able to use this
+    calculator even if they have other preexisting diet plans.</h4>
+    <br />
+    <br />
+    <br />
+    <h1 align="center">Different diets to try out!</h1>
+        <br />
+    <br />
+<h2 style="color: mediumseagreen"> The Vegetarian diet</h2>
+    <h4>People who follow the vegetarian diet do not eat any types of meat or fish. Some health benefits include
+    lower cholesterol levels and increased weight loss vs none-vegetarian diets.
+        The vegetarian diet is also a common diet for people who are conscience about the treatment of animals. </h4>
+        <br />
+    <br />
+    <br />
+<h2 style="color: darkgreen"> The Vegan diet</h2>
+    <h4>The Vegan Diet is similar in many ways to the vegetarian diet, no meat or fish. On top of these vegans do not eat
+    any animal products. This includes cheese, milk, and eggs among many other foods. Another difference between the
+    vegetarian and vegan diets is that vegans do not use animal products of any kinds, the main items being clothing.
+    Some benefits to the vegan diet are increased overall nutrition, and proven heart health benefits!</h4>
+        <br />
+    <br />
+    <br />
+<h2 style="color: goldenrod"> The Keto diet</h2>
+    <h4>The standard keto diet is a diet where 10% or less of a persons calories come from carbohydrates.
+    There are many benefits to the keto diet including lower blood sugar and insulin levels, faster weight loss,
+    and reduced appetite! One downfall to the traditional keto diet is the lack of the macronutrient protein essential
+    for muscle growth; however, if gaining muscle isn't your goal than the keto diet is worth looking into.</h4>
+    <br />
+    <br />
+    <br />
+    <h2 style="color: orangered"> The bottom line on diets</h2>
+    <h4>Your diet is an extremely important part of your life. It effects your health, mind, and overall well-being.
+    That being said before you choose to change your diet, especially if you are considering one of the special diets above
+    , is it vital to do your own extra research. Diets, like those above have science backed benefits, but they can also lead
+    to harmful unintended consequence. Keep this in mind when using The Fitness Formula's roadmap, and remember everyone is
+    unique, and we all need to be aware of different aspects when it comes to diet. </h4>
+    <br />
+    <br />
+    <br />
+</form>
+{% endblock %}
